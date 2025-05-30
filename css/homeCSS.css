@@ -4,10 +4,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  width: 100%;
+  overflow-x: hidden;
+}
 
 body {
-  margin: 0;
-  overflow-x: clip;
+  width: 100%;
   font-family: 'Segoe UI', 'Roboto', sans-serif;
   background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
   color: #f0f0f0;
