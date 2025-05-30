@@ -4,8 +4,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+html{
+  width: 100%;
+  overflow-x: hidden;
+}
 body {
+  width: 100%;
+  overflow-x: hidden;
   font-family: 'Segoe UI', 'Roboto', sans-serif;
   background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
   color: #f0f0f0;
@@ -14,10 +24,10 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
-  margin: auto;
-  padding: 40px 20px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Animação */
@@ -164,6 +174,11 @@ footer {
     padding: 40px 20px;
   }
 }
+.whatsapp-float {
+  max-width: 90vw;
+  flex-wrap: nowrap;
+}
+
 .whatsapp-link {
   background-color: #25D366;
   color: white;
