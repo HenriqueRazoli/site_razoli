@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 html{
   width: 100%;
@@ -343,3 +344,72 @@ footer {
   transform: scale(1.03);
 }
 
+.contato-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+  max-width: 600px;
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f4f4f4;
+}
+
+.icon {
+  font-size: 1.8rem;
+  color: #ff7e5f; /* Laranja moderno */
+  min-width: 30px;
+  text-align: center;
+}
+
+.btn-link {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  padding: 12px 22px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(255, 126, 95, 0.4);
+  transition: background 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-link:hover {
+  background: linear-gradient(135deg, #f86f43, #ffb67a);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(248, 111, 67, 0.5);
+}
+
+.contato-text {
+  font-size: 1rem;
+  color: #ffb67a;
+  user-select: text;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+  .contato-links {
+    max-width: 100%;
+  }
+
+  .contato-item {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .btn-link {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .contato-text {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 4px;
+  }
+}
